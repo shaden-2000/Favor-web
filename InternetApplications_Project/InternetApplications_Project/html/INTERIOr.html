@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport"content="width=device-width initial-scale=1.0">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet" >
+    <link href="../css/style copy.css" rel="stylesheet" >
+    <style media="screen">
+    .filter-box{
+        transform: translate(10%,0%);
+      }
+    </style>
+    <title>  Favor   </title>
+</head>
+
+<body>
+
+  <div class="container-fluid banner bg-success margin-top-50 bg-opacity-25">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-md">
+                <div class="navbar-brand">Favor</div>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/index.html#services">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/index.html#about">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/index.html#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+</div>
+
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-center">
+          <div>
+            <h2  class="display-5">Need someone to design? <h3>Here you find one.</h3></h2>
+            <h5>category </h5>
+            <div class="filter-box">
+              <button class="btn btn-secondary" data-filter ="All" >All </button>
+              <button class="btn btn-secondary" data-filter ="interior" >interior </button>
+              <button class="btn btn-secondary" data-filter ="design" >design</button>
+              <button class="btn btn-secondary" data-filter ="exterior" >exterior</button>
+              <button class="btn btn-secondary" data-filter ="impressive" >impressive</button>
+              <button class="btn btn-secondary" data-filter ="CHINESE" >CHINESE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row s">
+        <div class="col">
+          <label for="sf" >Service: </label>
+          <select class="selectService" name="" id="sf">
+            <option></option>
+              <option class="d" disabled>Service type</option>
+              <option><button class="btn interior"> interior</button></option>
+              <option><button class="btn design"> design</button></option>
+              <option class="d" disabled>Difficulty</option>
+              <option><button class="btn exterior"> exterior</button></option>
+              <option><button class="btn impressive"> impressive</button></option>
+              <option><button class="btn CHINESE"> CHINESE</button></option>
+             
+          </select>
+        </div>
+      
+
+    
+        <div class="col">
+          <label for="budget" >Budget: </label>
+          <select class="selectBudget" name="budget" id="budget">
+            <option></option>
+            <option class="budget" value="1" value2="10" onclick="checkBudget(1,10)">1$ to 10$</option>
+            <option class="budget" value="11" value2="20" onclick="checkBudget(11,20)">11$ to 20$</option>
+            <option class="budget" value="21" value2="30" onclick="checkBudget(21,30)">21$ to 30$</option>
+            <option class="budget" value="31" value2="40" onclick="checkBudget(31,40)">31$ to 40$</option>
+            <option class="budget" value="41" value2="50" onclick="checkBudget(41,50)">41$ to 50$</option>
+            <option class="budget" value="51" value2="60" onclick="checkBudget(51,60)">51$ to 60$</option>
+            <option class="budget" value="61" value2="70" onclick="checkBudget(61,70)">61$ to 70$</option>
+            <option class="budget" value="71" value2="80" onclick="checkBudget(71,80)">71$ to 80$</option>
+            <option class="budget" value="81" value2="90" onclick="checkBudget(81,90)">81$ to 90$</option>
+            <option class="budget" value="91" value2="100" onclick="checkBudget(91,100)">91$ to 100$</option>
+          </select>
+        </div>
+      </div>
+     
+     <!-- servers-->
+
+<section class="py-5">
+  <div class="container">
+
+      <div class="row text-center">
+
+       <div class="col-sm store-service interior">
+          <div class="card bg-light text-dark">
+            <img src="https://images.pexels.com/photos/1010600/pexels-photo-1010600.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top ">
+            <div class="card-body text-center">
+              <h4> Basic</h4>
+              <p> I will plan an interior design for your space<span class ="text-warning"> 10$</span></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm store-service interior">
+         <div class="card bg-light text-dark">
+           <img src="https://images.pexels.com/photos/1070872/pexels-photo-1070872.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top ">
+           <div class="card-body text-center">
+             <h4> Michael</h4>
+             <p> I will design and render realistic interior, exterior<span class ="text-warning"> 30$</span></p>
+           </div>
+         </div>
+        </div>
+
+
+        <div class="col-sm store-interior">
+         <div class="card bg-light text-dark">
+           <img src="https://images.pexels.com/photos/1845289/pexels-photo-1845289.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top ">
+           <div class="card-body text-center">
+             <h4>Emma</h4>
+             <p> I will do interior design and exterior design<span class ="text-warning"> 14$</span></p>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-sm store-service design">
+          <div class="card bg-light text-dark">
+            <img src="https://images.pexels.com/photos/942416/pexels-photo-942416.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top ">
+            <div class="card-body text-center">
+              <h4> Abigail</h4>
+              <p> I will make 3d modeling, texturing and render about<span class ="text-warning"> 55$</span></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm store-service design">
+         <div class="card bg-light text-dark">
+           <img src="https://images.pexels.com/photos/1871809/pexels-photo-1871809.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top ">
+           <div class="card-body text-center">
+             <h4> Emily</h4>
+             <p> I will design a unique glowy dark business card<span class ="text-warning"> 92$</span></p>
+           </div>
+         </div>
+        </div>
+
+
+        <div class="col-sm store-service impressive">
+         <div class="card bg-light text-dark">
+           <img src="https://images.pexels.com/photos/1517145/pexels-photo-1517145.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top ">
+           <div class="card-body text-center">
+             <h4> David</h4>
+             <p>I will design an impressive interior with realistic <span class ="text-warning"> 77$</span></p>
+           </div>
+         </div>
+        </div>
+
+
+        <div class="col-sm store-service impressive">
+         <div class="card bg-light text-dark">
+           <img src="https://images.pexels.com/photos/1008693/pexels-photo-1008693.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top ">
+           <div class="card-body text-center">
+             <h4> Richard</h4>
+             <p> I will design a unique glowy dark business card<span class ="text-warning"> 35$</span></p>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-sm store-service exterior">
+          <div class="card bg-light text-dark">
+            <img src="https://images.pexels.com/photos/906136/pexels-photo-906136.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="card-img-top " width="200px">
+            <div class="card-body text-center">
+              <h4> Joseph</h4>
+              <p> I will design feminine theme business card<span class ="text-warning"> 72$</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm store-service CHINESE">
+          <div class="card bg-light text-dark">
+            <img src="https://images.pexels.com/photos/259819/pexels-photo-259819.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="card-img-top " width="200px">
+            <div class="card-body text-center">
+              <h4> Joseph</h4>
+              <p> I will design and render 3d floor plans,interior and exterior<span class ="text-warning"> 72$</span></p>
+            </div>
+          </div>
+        </div>
+            </div>
+        </div>
+</section>
+
+<script src="../js/myscript.js" ></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+    

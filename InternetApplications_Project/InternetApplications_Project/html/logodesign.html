@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport"content="width=device-width initial-scale=1.0">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet" >
+    <link href="../css/style copy.css" rel="stylesheet" >
+
+    <title>  Favor   </title>
+</head>
+
+<body>
+
+  <div class="container-fluid banner bg-success margin-top-50 bg-opacity-25">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-md">
+                <div class="navbar-brand">Favor</div>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/index.html#services">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/index.html#about">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/index.html#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+  <div class="d-flex align-items-center justify-content-center">
+    <div>
+      <h2  class="display-5">you need someone to designe? <h3>here you find the best designers</h3></h2>
+      <h5>category </h5>
+      <div class="filter-box">
+        <button class="btn btn-secondary" data-filter ="All" >All</button>
+        <button class="btn btn-secondary" data-filter ="3D" >3D</button>
+        <button class="btn btn-secondary" data-filter ="MODERN" >MODERN</button>
+        <button class="btn btn-secondary" data-filter ="HAND-DRAWN" >HAND DRAWN</button>
+        <button class="btn btn-secondary" data-filter ="COMMERCIAL-DESIGN" >COMMERCIAL DESIGN</button>
+        <button class="btn btn-secondary" data-filter ="THEME-DESIGN" >THEME DESIGN</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row s">
+  <div class="col">
+    <label for="sf" >Service: </label>
+    <select class="selectService" name="" id="sf">
+      <option></option>
+        <option class="d" disabled>Service type</option>
+        <option><button class="btn commercial design"> commercial design</button></option>
+        <option><button class="btn theme design"> theme design</button></option>
+        <option class="d" disabled>logo style</option>
+        <option><button class="btn 3d"> 3d</button></option>
+        <option><button class="btn Hand-Drawn"> Hand-Drawn</button></option>
+        <option><button class="btn modern"> modern</button></option>
+        <option class="d" disabled>Delivery time</option>
+        <option><button class="btn 24h"> Express 24H</button></option>
+        <option><button class="btn up3d"> Up to 3 days</button></option>
+        <option><button class="btn up7d"> Up to 3 days</button></option>
+        <option><button class="btn anytime"> Anytime</button></option>
+    </select>
+  </div>
+
+  <div class="col">
+    <label for="budget" >Budget: </label>
+    <select class="selectBudget" name="budget" id="budget">
+      <option></option>
+      <option class="budget" value="1" value2="10" onclick="checkBudget(1,10)">1$ to 10$</option>
+      <option class="budget" value="11" value2="20" onclick="checkBudget(11,20)">11$ to 20$</option>
+      <option class="budget" value="21" value2="30" onclick="checkBudget(21,30)">21$ to 30$</option>
+      <option class="budget" value="31" value2="40" onclick="checkBudget(31,40)">31$ to 40$</option>
+      <option class="budget" value="41" value2="50" onclick="checkBudget(41,50)">41$ to 50$</option>
+      <option class="budget" value="51" value2="60" onclick="checkBudget(51,60)">51$ to 60$</option>
+      <option class="budget" value="61" value2="70" onclick="checkBudget(61,70)">61$ to 70$</option>
+      <option class="budget" value="71" value2="80" onclick="checkBudget(71,80)">71$ to 80$</option>
+      <option class="budget" value="81" value2="90" onclick="checkBudget(81,90)">81$ to 90$</option>
+      <option class="budget" value="91" value2="100" onclick="checkBudget(91,100)">91$ to 100$</option>
+    </select>
+  </div>
+</div>
+
+<!-- servers-->
+
+<section class="py-5">
+    <div class="container">
+
+        <div class="row text-center">
+
+          <div class="col-sm store-service 3D">
+           <div class="card bg-light text-dark">
+             <img src="../img/3D-LOGO-1.jpeg" alt="" class="card-img-top " width="200px">
+             <div class="card-body text-center">
+               <h4> lama</h4>
+               <p>I will do 3D design with a reasonable prices<span class ="text-warning"> 24$</span></p>
+             </div>
+           </div>
+          </div>
+
+
+          <div class="col-sm store-service MODERN">
+           <div class="card bg-light text-dark">
+             <img src="../img/3D-LOGO-2.jpeg" alt="" class="card-img-top " width="200px">
+             <div class="card-body text-center">
+               <h4> shaden</h4>
+               <p> I will do 3D design<span class ="text-warning"> 59$</span></p>
+             </div>
+           </div>
+          </div>
+
+
+          <div class="col-sm store-service MODERN">
+           <div class="card bg-light text-dark">
+             <img src="../img/pexels-photo-4543103.jpeg" class="card-img-top ">
+             <div class="card-body text-center">
+               <h4> rola</h4>
+               <p> I will design unique modern logo<span class ="text-warning"> 90$</span></p>
+             </div>
+           </div>
+          </div>
+
+          <div class="col-sm store-service MODERN">
+            <div class="card bg-light text-dark">
+              <img src="../img/modernn.jpeg" class="card-img-top ">
+              <div class="card-body text-center">
+                <h4> shatha</h4>
+                <p>I will create a Classy modern logo<span class ="text-warning"> 85$</span></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm store-service HAND-DRAWN">
+           <div class="card bg-light text-dark">
+             <img src="../img/sketch.jpeg" class="card-img-top ">
+             <div class="card-body text-center">
+               <h4> maha</h4>
+               <p> I will do a hand-drawn logo design<span class ="text-warning"> 100$</span></p>
+             </div>
+           </div>
+          </div>
+
+          <div class="col-sm store-service THEME-DESIGN">
+           <div class="card bg-light text-dark">
+             <img src="../img/theme.jpeg" class="card-img-top ">
+             <div class="card-body text-center">
+               <h4> shahad</h4>
+               <p> I offer a theme design service for parties<span class ="text-warning"> 73$</span></p>
+             </div>
+           </div>
+          </div>
+
+          <div class="col-sm store-service THEME-DESIGN">
+            <div class="card bg-light text-dark">
+              <img src="../img/modern1.jpeg" class="card-img-top ">
+              <div class="card-body text-center">
+                <h4> ahmad</h4>
+                <p> I will design elegant logo<span class ="text-warning"> 33$</span></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm store-service MODERN">
+           <div class="card bg-light text-dark">
+             <img src="../img/logo.jpeg" class="card-img-top ">
+             <div class="card-body text-center">
+               <h4> affaf</h4>
+               <p>I will create a modern logos<span class ="text-warning"> 48$</span></p>
+             </div>
+           </div>
+          </div>
+
+
+          <div class="col-sm store-service COMMERCIAL-DESIGN">
+           <div class="card bg-light text-dark">
+             <img src="../img/commarical.jpeg" class="card-img-top ">
+             <div class="card-body text-center">
+               <h4> Lana</h4>
+               <p>I will design commercial logos<span class ="text-warning"> 60$</span></p>
+             </div>
+           </div>
+          </div>
+
+
+          <div class="col-sm store-service COMMERCIAL-DESIGN">
+           <div class="card bg-light text-dark">
+             <img src="../img/comarical.jpeg" class="card-img-top ">
+             <div class="card-body text-center">
+               <h4> Mohammed</h4>
+               <p> I will design professional commercial logos<span class ="text-warning"> 54$</span></p>
+             </div>
+           </div>
+          </div>
+
+          <div class="col-sm store-service MODERN">
+            <div class="card bg-light text-dark">
+              <img src="../img/pexels-photo-4503734.jpeg" alt="" class="card-img-top " width="200px">
+              <div class="card-body text-center">
+                <h4> Ammera</h4>
+                <p>I will create modern minimalist logo design<span class ="text-warning"> 45$</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm store-service HAND-DRAWN">
+            <div class="card bg-light text-dark">
+              <img src="../img/hand-drawn-2.jpeg" alt="" class="card-img-top " width="200px">
+              <div class="card-body text-center">
+                <h4> Shahad</h4>
+                <p> I will do a hand-drawn with free source files<span class ="text-warning"> 39$</span></p>
+              </div>
+            </div>
+          </div>
+
+
+
+              </div>
+          </div>
+</section>
+
+
+<script src="../js/myscript.js" ></script>
+ <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

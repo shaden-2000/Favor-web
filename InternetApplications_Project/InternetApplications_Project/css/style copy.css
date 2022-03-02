@@ -1,0 +1,76 @@
+body{
+  margin:0;
+  padding:0;
+  background:rgb(255, 255, 255);
+  font-family: 'Raleway',sans-serif;
+  color: black;
+}
+.display-5{
+  margin-top: 2em;
+  font-size: 2em;
+  font-weight: 350;
+}
+.filter-box{
+  margin-bottom: 3%;
+}
+h3{
+  font-weight: 500;
+  color: #198754;
+}
+h5{
+  margin-top: 3%;
+}
+
+.d{
+  font-size: 1.3em;
+  font-weight: bold;
+  color: black;
+}
+.card{
+  width: 15.625em;
+  height: 34.375rem;
+  border-radius: 10px ;
+  margin: 10px;
+}
+.card-img-top{
+  width: 250px;
+  height: 350px;
+  border-radius: 10px 10px 0px 0px;
+}
+.selectService, .selectBudget{
+  width: 80%;
+  margin: 10px 5px;
+  border-radius: 5px;
+}
+.s{
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaeaf2;
+  width: 40%;
+  height: 4.375rem;
+  transform: translate(72.5%,0%);
+  border-radius: 10px;
+}
+/*nav style*/
+
+.page-section{
+
+margin-top: 120px;
+}
+
+.banner .navbar{
+margin-top:1%;
+}
+.banner .navbar-brand{
+color: rgb(255, 255, 255);
+font-size:1.8em;
+font-weight: 700;
+margin-left: 10%;
+}
+.banner .nav{
+margin-right:10%;
+}
+.banner .nav li a{
+color:rgb(255, 255, 255);
+font-size: 1.2em;
+}

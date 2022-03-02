@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style copy.css" rel="stylesheet">
+
+    <title> Favor </title>
+</head>
+
+<body>
+
+    <div class="container-fluid banner bg-success margin-top-50 bg-opacity-25">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-md">
+                    <div class="navbar-brand">Favor</div>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/index.html#services">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/index.html#about">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/index.html#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-center">
+            <div>
+                <h2 class="display-5">Are you looking for the best trainers? <h3>Here you will find the best coaches.
+                    </h3>
+                </h2>
+
+                <div class="filter-box">
+                    <button class="btn btn-secondary" data-filter="All">All </button>
+                    <button class="btn btn-secondary" data-filter="BOXING">boxing lessons</button>
+                    <button class="btn btn-secondary" data-filter="DANCE">dance</button>
+                    <button class="btn btn-secondary" data-filter="NUTRITION">nutrition</button>
+                    <button class="btn btn-secondary" data-filter="FITNESS">Fitness</button>
+                    <button class="btn btn-secondary" data-filter="FENCING">fencing lessons</button>
+                    <button class="btn btn-secondary" data-filter="CHILDHOOD">childhood lessons</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row s">
+        <div class="col">
+            <label for="sf">Service: </label>
+            <select class="selectService" name="" id="sf">
+                <option></option>
+                <option class="d" disabled>Service type</option>
+                <option><button class="btn lessons">boxing lessons</button></option>
+                <option class="d" disabled>dance</option>
+                <option><button class="btn chef">nutrition</button></option>
+                <option><button class="btn sous-chef">Fitness </button></option>
+                <option><button class="btn beginner"> fencing lessons</button></option>
+                <option class="d" disabled>childhood lessons</option>
+                <option><button class="btn 24h"> Epress 24H</button></option>
+                <option><button class="btn up3d"> Up to 3 days</button></option>
+                <option><button class="btn anytime"> Anytime</button></option>
+            </select>
+        </div>
+
+
+
+        <div class="col">
+            <label for="budget">Budget: </label>
+            <select class="selectBudget" naYme="budget" id="budget">
+                <option></option>
+                <option class="budget" value="1" value2="10" onclick="checkBudget(1,10)">1$ to 10$</option>
+                <option class="budget" value="11" value2="20" onclick="checkBudget(11,20)">11$ to 20$</option>
+                <option class="budget" value="21" value2="30" onclick="checkBudget(21,30)">21$ to 30$</option>
+                <option class="budget" value="31" value2="40" onclick="checkBudget(31,40)">31$ to 40$</option>
+                <option class="budget" value="41" value2="50" onclick="checkBudget(41,50)">41$ to 50$</option>
+                <option class="budget" value="51" value2="60" onclick="checkBudget(51,60)">51$ to 60$</option>
+                <option class="budget" value="61" value2="70" onclick="checkBudget(61,70)">61$ to 70$</option>
+                <option class="budget" value="71" value2="80" onclick="checkBudget(71,80)">71$ to 80$</option>
+                <option class="budget" value="81" value2="90" onclick="checkBudget(81,90)">81$ to 90$</option>
+                <option class="budget" value="91" value2="100" onclick="checkBudget(91,100)">91$ to 100$
+                </option>
+            </select>
+        </div>
+    </div>
+
+
+
+    </div>
+    <!-- servers-->
+
+    <section class="py-5">
+        <div class="container">
+
+            <div class="row text-center">
+
+
+
+
+
+
+
+                <div class="col-sm store-service CHILDHOOD">
+                    <div class="card bg-light text-dark">
+                        <img src="https://images.pexels.com/photos/5154016/pexels-photo-5154016.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                            class="card-img-top ">
+                        <div class="card-body text-center">
+                            <h4> magwayen</h4>
+                            <p> I will create an early childhood lesson plan tailor fit for
+                                your
+                                child</p>
+                            <p class="cord-text"><span class="text-warning">55$ </span> </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm store-service FENCING">
+                    <div class="card bg-light text-dark">
+                        <img src=" https://images.pexels.com/photos/6538950/pexels-photo-6538950.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                            class="card-img-top ">
+                        <div class="card-body text-center">
+                            <h4> Muhammad</h4>
+                            <p> I will do fencing lessons online or fitness lessons</p>
+                            <p class="cord-text"><span class="text-warning">299$ </p></span>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm store-service FITNESS">
+                    <div class="card bg-light text-dark">
+                        <img src=" https://images.pexels.com/photos/5067746/pexels-photo-5067746.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                            class="card-img-top ">
+                        <div class="card-body text-center">
+                            <h4> Dmahnoor</h4>
+                            <p>I will edit fitness lessons workout and yoga videos
+                            </p>
+                            <p class="cord-text"><span class="text-warning">50$</span> </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm store-service FITNESS">
+                    <div class="card bg-light text-dark">
+                        <img src="https://images.pexels.com/photos/4753891/pexels-photo-4753891.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                            class="card-img-top ">
+                        <div class="card-body text-center">
+                            <h4>Konan</h4>
+                            <p> I will give you lessons about fitness,health,exercises and
+                                also</p>
+                            <p class="cord-text"><span class="text-warning">30$</span> </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm store-service FITNESS">
+                    <div class="card bg-light text-dark">
+                        <img src="https://images.pexels.com/photos/4397840/pexels-photo-4397840.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                            class="card-img-top ">
+                        <div class="card-body text-center">
+                            <h4> bismasch</h4>
+                            <p> I will provide you fitness lesson </p>
+                            <p class="cord-text"><span class="text-warning">70$</span> </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm store-service DANCE">
+                    <div class="card bg-light text-dark">
+                        <img src="https://images.pexels.com/photos/8752672/pexels-photo-8752672.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                            class="card-img-top ">
+                        <div class="card-body text-center">
+                            <h4> Ashwaq</h4>
+                            <p> I will provide bollywood fitness dance lessons</p>
+                            <p class="cord-text"><span class="text-warning">80$</span> </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm store-service NUTRITION ">
+                    <div class="card bg-light text-dark">
+                        <img src="https://images.pexels.com/photos/4482932/pexels-photo-4482932.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                            class="card-img-top ">
+                        <div class="card-body text-center">
+                            <h4> shaymaa abbadi</h4>
+                            <p> I will give lessons on health, fitness, weight loss
+                                and
+                                nutrition</p>
+                            <p class="cord-text"><span class="text-warning">20$</span> </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm store-service BOXING">
+                    <div class="card bg-light text-dark">
+                        <img src=" https://images.pexels.com/photos/2803158/pexels-photo-2803158.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                            class="card-img-top ">
+                        <div class="card-body text-center">
+                            <h4> magwayen</h4>
+                            <p>I will create an early childhood lesson plan tailor fit for
+                                your
+                                child</p>
+                            <p class="cord-text"><span class="text-warning">150$</span> </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm store-service CHINESE">
+                    <div class="card bg-light text-dark">
+                        <img src=" https://images.pexels.com/photos/4498294/pexels-photo-4498294.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                            alt="" class="card-img-top " width="200px">
+                        <div class="card-body text-center">
+                            <h4> Nada</h4>
+                            <p> I will give you fitness lesson</p>
+                            <p class="cord-text"><span class="text-warning">60$</span> </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="../js/myscript.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

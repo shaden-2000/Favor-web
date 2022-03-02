@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>My Account</title>
+    <meta charset = "UTF-8" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="../css/MyAccountStyle2.css">
+		<script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin = "anonymous"></script>
+	</head>
+
+
+	<body>
+		<div class="container">
+			<div class="forms-container">
+
+				<div class="logIn-signUp">
+					<form class="logIn" action="#">
+						<h2 class="title">Log In</h2>
+						<div class="input">
+							<i class="fas fa-user"></i>
+							<input type="text" name="username" id="username" placeholder="Username" required="required"/>
+						</div>
+						<div class="input">
+							<i class="fas fa-lock"></i>
+							<input type="password" name="password" id="password" placeholder="Password" required="required"/>
+						</div>
+						<div class="remember-me">
+							<input type="checkbox" id="rememberMe" name="rememberMe" value="rememberMe"/>
+							<label for="rememberMe"> Remember Me</label>
+						</div>
+						<input class="btn login" type="submit" value="Log In"/>
+						<p class="or">Or with Social Platforms</p>
+						<div class="social-media">
+							<a href="https://m.facebook.com/login/?refsrc=deprecated" class="social-icon" target="_blank">
+								<i class="fab fa-facebook-f"></i>
+							<a href="https://twitter.com/?login" class="social-icon" target="_blank">
+								<i class="fab fa-twitter"></i>
+							</a>
+							<a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="social-icon" target="_blank">
+								<i class="fab fa-google"></i>
+							</a>
+						</div>
+						<div class="shiffting">
+							<p>New here? <a class="aLink" href="#" id="signUpB">Sign Up</a></p>
+						</div>
+					</form>
+
+					<form class="signUp" action="#" onsubmit="check()">
+						<h2 class="title">Sign Up</h2>
+						<div class="input">
+							<i class="fas fa-user"></i>
+							<input type="text" name="username" id="username" placeholder="Username" required="required"/>
+						</div>
+						<div class="input">
+							<i class="fas fa-envelope"></i>
+							<input type="email" name="email" id="email" placeholder="Email" required="required"/>
+						</div>
+						<div class="input">
+							<i class="fas fa-lock"></i>
+							<input type="password" name="passwordd" id="passwordd" placeholder="Password" required="required"/>
+						</div>
+						<div class="input">
+							<i class="fas fa-lock"></i>
+							<input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required="required"/>
+						</div>
+						<div class="agree">
+							<input type="checkbox" id="agree" name="agree" value="agree"/>
+							<label for="agree"> I agree to the term and conditions and the privacy policy</label>
+						</div>
+						<input class="btn signup" type="submit" value="Sign Up" onsubmit="check()" />
+						<p class="or">Or with Social Platforms</p>
+						<div class="social-media">
+							<a href="https://m.facebook.com/login/?refsrc=deprecated" class="social-icon" target="_blank">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a href="https://twitter.com/?login" class="social-icon" target="_blank">
+								<i class="fab fa-twitter"></i>
+							</a>
+							<a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="social-icon" target="_blank">
+								<i class="fab fa-google"></i>
+							</a>
+						</div>
+						<div class="shiffting">
+							<p>Have an account? <a class="aLink" href="#" id="logInB">Log In</a></p>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+
+
+		<script type="text/javascript">
+			const logIn_btn = document.querySelector('#logInB');
+			const signUp_btn = document.querySelector('#signUpB');
+			const container = document.querySelector('.container');
+
+			signUp_btn.addEventListener('click', ()=> {
+				container.classList.add('signUp-mode');
+			});
+
+			logIn_btn.addEventListener('click', ()=> {
+				container.classList.remove('signUp-mode');
+			});
+		</script>
+
+		<script type="text/javascript">
+			function check(){
+				var pw1 = document.getElementById("#passwordd").value;
+				var pw2 = document.getElementById("#confirmPassword").value;
+
+				if(pw1.length < 8) {
+					alret("Password length must be atleast 8 characters");
+					return false;
+				}
+				if(pw1 != pw2) {
+					alret("Passwords are not same");
+					document.getElementById("message2").innerHTML = "**Passwords are not same";
+					return false;
+				}
+				else {
+					return true;
+				}
+			}
+		</script>
+
+	</body>
+
+</html>
